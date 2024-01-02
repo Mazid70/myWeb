@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: aliceblue;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: rgb(22, 7, 35);
+}
+h1 {
+  display: inline-block;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  background-color: rgb(37, 19, 54);
+  height: 50px;
+}
+.head {
+  display: flex;
+  width: 100%;
+}
+span {
+  font-weight: bold;
+  font-size: 1.7em;
+}
+
+a {
+  margin-right: 40px;
+  justify-self: flex-end;
+  font-size: 1.19em;
+}
+a:hover {
+  color: rgb(191, 13, 13);
+  box-shadow: 0px 2px 20px 0px rgb(191, 13, 13);
+}
+.white {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.red {
+  color: rgb(191, 13, 13);
+  font-weight: bolder;
+  margin-top: 10px;
+}
+
+.links {
+  position: absolute;
+  right: 0px;
+  margin-top: 15px;
+}
+#myself {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 1000px;
+}
+.a {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  height: 200px;
+  width: 300px;
+}
+
+p {
+  width: 800px;
+  text-align: justify;
+}
+.icon {
+  margin-right: 20px;
+  font-size: 1.6em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border: 2px solid rgb(191, 13, 13);
+  border-radius: 50%;
+  i {
+    color: rgb(191, 13, 13);
+  }
+}
+.icondivs {
+  display: flex;
+  justify-content: center;
+}
+button {
+  background-color: rgb(191, 13, 13);
+  border: 0px;
+  height: 40px;
+  width: 160px;
+  border-radius: 20px;
+  box-shadow: 0px 2px 20px 0px red;
+}
+#about {
+  display: flex;
+  background-color: rgb(13, 3, 23);
+  height: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#about > img {
+  height: 500px;
+  width: 700px;
+  position: relative;
+}
+
+.about-text > h1 {
+  margin-right: 10px;
+}
+.about-text > span {
+  font-size: 1.3em;
+}
+.contianer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.griditems {
+  height: 200px;
+  width: 320px;
+  background-color: rgb(63, 33, 92);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  display: flex-end;
+  align-items: flex-end;
+  justify-content: center;
+  box-shadow: 0 0px 10px 0px red;
+}
+.griditems:hover {
+  p {
+    display: inline-block;
+    text-align: justify;
+  }
+}
+.griditems > p {
+  display: none;
+  width: 100%;
+
+}
+
+#mywork {
+  height: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 1000px;
+  background-color: rgb(13, 3, 23);
+}
+
+input {
+  height: 40px;
+  width: 400px;
+  border-radius: 10px;
+  margin: 5px;
+  background-color: rgba(156, 154, 154, 0.3);
+  border: 0px;
+  text-align: start;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+}
+::placeholder {
+  color: white;
+  opacity: 0.5;
+  font-size: 1.2em;
+}
+.big {
+  width: 830px;
+  height: 200px;
+}
