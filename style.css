@@ -5,6 +5,7 @@
   color: aliceblue;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   scroll-behavior: smooth;
+  
 }
 body {
   background-color: rgb(22, 7, 35);
@@ -29,7 +30,7 @@ span {
 }
 
 a {
-  margin-right: 40px;
+  margin-right:80px;
   justify-self: flex-end;
   font-size: 1.19em;
 }
@@ -38,7 +39,7 @@ a:hover {
   box-shadow: 0px 2px 20px 0px rgb(191, 13, 13);
 }
 .white {
-  margin-left: 10px;
+  margin-left: 100px;
   margin-top: 10px;
 }
 .red {
@@ -51,13 +52,15 @@ a:hover {
   position: absolute;
   right: 0px;
   margin-top: 15px;
+  margin-right: 150px;
 }
 #myself {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 1000px;
+  height:1000px;
+  width:auto;
 }
 .a {
   position: absolute;
@@ -97,6 +100,11 @@ button {
   border-radius: 20px;
   box-shadow: 0px 2px 20px 0px red;
 }
+.none{
+  background-color: rgb(22, 7, 35);
+  border: 2px solid rgb(191, 13, 13);
+  color:rgb(191, 13, 13) ;
+}
 #about {
   display: flex;
   background-color: rgb(13, 3, 23);
@@ -104,6 +112,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  width:auto;
 }
 #about > img {
   height: 500px;
@@ -113,6 +122,7 @@ button {
 
 .about-text > h1 {
   margin-right: 10px;
+  
 }
 .about-text > span {
   font-size: 1.3em;
@@ -128,7 +138,7 @@ button {
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
-  display: flex-end;
+  display: flex;
   align-items: flex-end;
   justify-content: center;
   box-shadow: 0 0px 10px 0px red;
@@ -137,8 +147,21 @@ button {
   p {
     display: inline-block;
     text-align: justify;
+    animation: slideup 1.5s ease-in-out;
+    vertical-align: bottom;
   }
 }
+@keyframes slideup {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
 .griditems > p {
   display: none;
   width: 100%;
@@ -150,6 +173,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  width:auto;
 }
 #contact {
   display: flex;
@@ -158,6 +182,7 @@ button {
   text-align: center;
   height: 1000px;
   background-color: rgb(13, 3, 23);
+  width:auto;
 }
 
 input {
@@ -171,6 +196,8 @@ input {
   color: white;
   padding: 10px;
   font-size: 16px;
+  resize: none;
+  
 }
 ::placeholder {
   color: white;
@@ -178,6 +205,43 @@ input {
   font-size: 1.2em;
 }
 .big {
+  padding: 10px;
+  margin-top:5px;
   width: 830px;
   height: 200px;
+  resize: none;
+  border-radius: 10px;
+  background-color: rgba(156, 154, 154, 0.3);
+}
+h1,h2,span,img,h3,button,a,p{
+  animation: slideIn 1.5s ease-in-out;
+}
+  
+  
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes bounce {
+  
+  0% {
+    transform: translateY(50px);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(50px);
+  }
+
+}
+img{
+  animation: bounce 3s infinite;
 }
