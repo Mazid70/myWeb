@@ -5,7 +5,6 @@
   color: aliceblue;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   scroll-behavior: smooth;
-  
 }
 body {
   background-color: rgb(22, 7, 35);
@@ -30,7 +29,7 @@ span {
 }
 
 a {
-  margin-right:80px;
+  margin-right: 80px;
   justify-self: flex-end;
   font-size: 1.19em;
 }
@@ -59,8 +58,8 @@ a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height:1000px;
-  width:auto;
+  height: 1000px;
+  width: auto;
 }
 .a {
   position: absolute;
@@ -100,19 +99,20 @@ button {
   border-radius: 20px;
   box-shadow: 0px 2px 20px 0px red;
 }
-.none{
+.none {
   background-color: rgb(22, 7, 35);
   border: 2px solid rgb(191, 13, 13);
-  color:rgb(191, 13, 13) ;
+  color: rgb(191, 13, 13);
 }
 #about {
   display: flex;
   background-color: rgb(13, 3, 23);
   height: 1000px;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width:auto;
+  align-items:flex-start;
+  justify-content:center;
+  text-align:center;
+  width: auto;
 }
 #about > img {
   height: 500px;
@@ -122,7 +122,6 @@ button {
 
 .about-text > h1 {
   margin-right: 10px;
-  
 }
 .about-text > span {
   font-size: 1.3em;
@@ -165,7 +164,6 @@ button {
 .griditems > p {
   display: none;
   width: 100%;
-
 }
 
 #mywork {
@@ -173,7 +171,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width:auto;
+  width: auto;
 }
 #contact {
   display: flex;
@@ -182,7 +180,7 @@ button {
   text-align: center;
   height: 1000px;
   background-color: rgb(13, 3, 23);
-  width:auto;
+  width: auto;
 }
 
 input {
@@ -197,7 +195,6 @@ input {
   padding: 10px;
   font-size: 16px;
   resize: none;
-  
 }
 ::placeholder {
   color: white;
@@ -206,18 +203,23 @@ input {
 }
 .big {
   padding: 10px;
-  margin-top:5px;
+  margin-top: 5px;
   width: 830px;
   height: 200px;
   resize: none;
   border-radius: 10px;
   background-color: rgba(156, 154, 154, 0.3);
 }
-h1,h2,span,img,h3,button,a,p{
+h1,
+h2,
+span,
+img,
+h3,
+button,
+a,
+p {
   animation: slideIn 1.5s ease-in-out;
 }
-  
-  
 
 @keyframes slideIn {
   from {
@@ -230,7 +232,6 @@ h1,h2,span,img,h3,button,a,p{
   }
 }
 @keyframes bounce {
-  
   0% {
     transform: translateY(50px);
   }
@@ -240,83 +241,67 @@ h1,h2,span,img,h3,button,a,p{
   100% {
     transform: translateY(50px);
   }
-
 }
-img{
+img {
   animation: bounce 3s infinite;
 }
-@media(max-width:600px) {
+@media (max-width: 600px) {
   .white::before {
     content: "\f0c9"; /* Unicode for the bars icon in Font Awesome Solid */
-    font-family: "Font Awesome 5 Free"; 
-    font-weight: 900; 
-    margin-right:20px; 
-    
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 20px;
   }
   p {
-    width:300px;
+    width: 300px;
     text-align: justify;
   }
-  header{
+  header {
     width: 100%;
   }
-  .links{
+  .links {
     visibility: hidden;
   }
-  #myself,#about,#mywork,#contact{
-    width:100%;
+  #myself,
+  #about,
+  #mywork,
+  #contact {
+    width: 100%;
   }
- #myself>img{
-    height:150px;
-    width:200px;
+  #myself > img {
+    height: 150px;
+    width: 200px;
     position: absolute;
     top: 10px;
-    left:0px;
+    left: 0px;
   }
   .white {
-    margin-left:25px;
+    margin-left: 25px;
     margin-top: 10px;
   }
-  #about{
+  #about {
     display: flex;
-    justify-content:center;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
     margin-left: 0px;
     text-align: center;
   }
-  .about-text>img{
-    height:200px;
+  .about-text > img {
+    height: 200px;
     margin-bottom: 20px;
   }
 
-  .contianer{
+  .contianer {
     display: inline-block;
   }
-  .griditems{
-    height:130px;
+  .griditems {
+    height: 130px;
     margin-bottom: 5px;
-   
   }
 
-input,.big{
-  display: inline-block;
-  width:92%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  input,
+  .big {
+    display: inline-block;
+    width: 92%;
+  }
 }
