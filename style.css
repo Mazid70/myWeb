@@ -245,3 +245,78 @@ h1,h2,span,img,h3,button,a,p{
 img{
   animation: bounce 3s infinite;
 }
+@media(max-width:600px) {
+  .white::before {
+    content: "\f0c9"; /* Unicode for the bars icon in Font Awesome Solid */
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    margin-right:20px; 
+    
+  }
+  p {
+    width:300px;
+    text-align: justify;
+  }
+  header{
+    width: 100%;
+  }
+  .links{
+    visibility: hidden;
+  }
+  #myself,#about,#mywork,#contact{
+    width:100%;
+  }
+ #myself>img{
+    height:150px;
+    width:200px;
+    position: absolute;
+    top: 10px;
+    left:0px;
+  }
+  .white {
+    margin-left:25px;
+    margin-top: 10px;
+  }
+  #about{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin-left: 0px;
+    text-align: center;
+  }
+  .about-text>img{
+    height:200px;
+    margin-bottom: 20px;
+  }
+
+  .contianer{
+    display: inline-block;
+  }
+  .griditems{
+    height:130px;
+    margin-bottom: 5px;
+   
+  }
+
+input,.big{
+  display: inline-block;
+  width:92%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
